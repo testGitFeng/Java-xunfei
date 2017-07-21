@@ -114,7 +114,7 @@ public class MscTest {
 		FileInputStream fis = null;
 		final byte[] buffer = new byte[64*1024];
 		try {
-			fis = new FileInputStream(new File("./test2.pcm"));
+			fis = new FileInputStream(new File("./test.pcm"));
 			if (0 == fis.available()) {
 				mResult.append("no audio avaible!");
 				recognizer.cancel();
